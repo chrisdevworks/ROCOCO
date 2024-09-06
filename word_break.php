@@ -10,7 +10,7 @@
     <?php
     function wordBreak($s, $wordDict) {
         global $wordSet, $memo;
-        $wordSet = array_flip($wordDict);  // Create a set for fast lookup
+        $wordSet = array_flip($wordDict);
         $memo = [];
         $results = [];
 
@@ -46,7 +46,7 @@
     $wordDict = ["this", "th", "is", "famous", "Word", "break", "b", "r", "e", "a", "k", "br", "bre", "brea", "ak", "problem"];
     $s = "Wordbreakproblem";
 
-    // Function call and output
+    // Output
     $result = wordBreak($s, $wordDict);
     ?>
 
